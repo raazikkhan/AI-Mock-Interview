@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🎤 AI Mock Interview App
 
-## Getting Started
+🚀 Build & Deploy a Full Stack AI Mock Interview Platform with Next.js, React, n8n, Convex, ArcJet, Akool Streaming Avatars, Clerk Authentication, and Hostinger Hosting.
 
-First, run the development server:
+This project allows users to practice interviews with a real-time AI interviewer avatar, powered by Akool and ArcJet, while n8n automates workflows and Convex handles the backend in real-time.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+⸻
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔥 Features
+• ✅ Next.js + React Frontend – Modern and responsive UI
+• ✅ Clerk Authentication – Secure login & user management
+• ✅ AI-Powered Interviewer – Intelligent question generation with ArcJet
+• ✅ Akool Streaming Avatar – Real-time, interactive AI interviewer
+• ✅ n8n Automation – Automated notifications, scheduling, and workflows
+• ✅ Convex Backend – Real-time database and scalable backend logic
+• ✅ Deployment Ready – n8n hosted on Hostinger for production
+• ✅ Full-Stack AI SaaS Starter Kit
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+⸻
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🛠️ Tech Stack
+• Frontend: Next.js, React, TailwindCSS
+• Auth: Clerk
+• AI: ArcJet (Interview Questions) + Akool (Streaming Avatars)
+• Backend & Database: Convex
+• Automation: n8n (deployed on Hostinger)
+• Deployment: Vercel (frontend), Hostinger (n8n)
 
-## Learn More
+📂 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+ai-mock-interview-app/
+│── frontend/ # Next.js + React frontend
+│── backend/ # Convex functions and schema
+│── n8n/ # n8n workflow automation setup
+│── public/ # Assets (logos, icons, etc.)
+│── .env.local # Environment variables
+│── README.md # Project documentation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⚡ Getting Started
+1️⃣ Clone the Repository
+git clone https://github.com/raazikkhan/AI-Mock-Interview.git
+cd ai-mock-interview-app
