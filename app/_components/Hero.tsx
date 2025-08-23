@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "motion/react";
+import { span } from "motion/react-client";
 
 const Hero = () => {
   return (
@@ -47,10 +48,11 @@ const Hero = () => {
             }}
             className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
           >
-            Prepare for your Dream role with Interactive AI Avatars that mimic
-            real Recruiters. Get instant insights, refine your communication
-            skills, and boost your confidence with personalized feedback. Join
-            us to
+            Prepare for your Dream role with{" "}
+            <span className="text-[#544abd]">Interactive AI Avatars</span> that
+            mimic real Recruiters. Get instant insights, refine your
+            communication skills, and boost your confidence with personalized
+            feedback. Join us to
           </motion.p>
           <motion.div
             initial={{
