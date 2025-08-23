@@ -47,7 +47,7 @@ ai-mock-interview-app/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/ai-mock-interview-app.git
+git clone https://github.com/raazikkhan/ai-mock-interview-app.git
 cd ai-mock-interview-app
 ```
 
