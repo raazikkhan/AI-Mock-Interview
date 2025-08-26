@@ -1,12 +1,13 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { useUser } from "@clerk/nextjs";
 import { useState } from "react";
 import EmptyState from "./EmptyState";
+import CreateInterviewDialog from "../-components/CreateInterviewDialog";
 
 const Dashboard = () => {
   const [interviewList, setInterviewList] = useState([]);
+  console.log(setInterviewList);
   const { user } = useUser();
   return (
     <>
@@ -16,10 +17,7 @@ const Dashboard = () => {
             <h1 className="text-xl text-gray-500">My Dashboard</h1>
             <h2 className="text-3xl">Welcome, {user?.fullName}</h2>
           </div>
-
-          <Button variant="outline" size={"lg"}>
-            + Create Interview
-          </Button>
+          <CreateInterviewDialog />
         </div>
         {interviewList.length === 0 && <EmptyState />}
       </div>
