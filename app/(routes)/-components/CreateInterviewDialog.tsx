@@ -12,8 +12,19 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ResumeUpload from "./ResumeUpload";
 import { DialogClose } from "@radix-ui/react-dialog";
 import { Ghost } from "lucide-react";
+import JobDescription from "./JobDescription";
+import { useState } from "react";
 
 const CreateInterviewDialog = () => {
+  const [formData, setFormData] = useState<FormData>();
+
+  const onHandleInputChange = (field: string, value: string) => {
+    setFormData((prevData: any) => ({
+      ...prevData,
+      [field]: value,
+    }));
+  };
+
   return (
     <div>
       <Dialog>
@@ -38,7 +49,7 @@ const CreateInterviewDialog = () => {
                   <ResumeUpload />
                 </TabsContent>
                 <TabsContent value="job-description">
-                  Change your password here.
+                  <JobDescription onHandleInputChange={onHandleInputChange} />
                 </TabsContent>
               </Tabs>
             </DialogDescription>
